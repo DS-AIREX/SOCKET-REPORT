@@ -5,7 +5,7 @@ import json
 st.set_page_config(page_title="SOCKET REPORT ITEM WISE", layout="wide")
 
 # Instruction for mobile users – shown at the very top
-st.info("📱 **Tap the '>>' icon at top‑left to open the size selector (on mobile).**")
+st.info("📱 **Tap the '>>' icon at top‑left to select socket size.**")
 
 st.title("🔧 SOCKET REPORT ITEM WISE")
 
