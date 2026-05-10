@@ -737,95 +737,13 @@
             }
           ]
         },
-        "1500.0": {
-          "Unknown": [
-            {
-              "order_id": "O022786",
-              "qty": 10,
-              "amount": 7500.0
-            },
-            {
-              "order_id": "O021527",
-              "qty": 15,
-              "amount": 7875.0
-            },
-            {
-              "order_id": "O021527",
-              "qty": 8,
-              "amount": 3920.0
-            },
-            {
-              "order_id": "O023598",
-              "qty": 20,
-              "amount": 15000.0
-            },
-            {
-              "order_id": "O022383",
-              "qty": 4,
-              "amount": 1480.0
-            },
-            {
-              "order_id": "O022383",
-              "qty": 4,
-              "amount": 1640.0
-            }
-          ],
-          "SS": [
-            {
-              "order_id": "O023295",
-              "qty": 1,
-              "amount": 490.0
-            }
-          ]
-        },
-        "1000.0": {
-          "Unknown": [
-            {
-              "order_id": "O022768",
-              "qty": 20,
-              "amount": 9000.0
-            },
-            {
-              "order_id": "O022299",
-              "qty": 6,
-              "amount": 2700.0
-            },
-            {
-              "order_id": "O022383",
-              "qty": 4,
-              "amount": 1400.0
-            },
-            {
-              "order_id": "O022383",
-              "qty": 4,
-              "amount": 1600.0
-            },
-            {
-              "order_id": "O023169",
-              "qty": 20,
-              "amount": 9000.0
-            },
-            {
-              "order_id": "O023484",
-              "qty": 20,
-              "amount": 10900.0
-            }
-          ],
-          "SS": [
-            {
-              "order_id": "O022660",
-              "qty": 2,
-              "amount": 1900.0
-            },
-            {
-              "order_id": "O022466",
-              "qty": 6,
-              "amount": 4500.0
-            }
-          ]
-        },
         "2000.0": {
           "Unknown": [
+            {
+              "order_id": "O022626",
+              "qty": 100,
+              "amount": 34000.0
+            },
             {
               "order_id": "O022786",
               "qty": 15,
@@ -880,6 +798,11 @@
               "order_id": "O022109",
               "qty": 10,
               "amount": 4500.0
+            },
+            {
+              "order_id": "O022367",
+              "qty": 50,
+              "amount": 14500.0
             },
             {
               "order_id": "O022488",
@@ -942,6 +865,11 @@
               "order_id": "AE00268",
               "qty": 100,
               "amount": 31000.0
+            },
+            {
+              "order_id": "O021444",
+              "qty": 10,
+              "amount": 8000.0
             },
             {
               "order_id": "O022670",
@@ -1009,14 +937,29 @@
               "amount": 1900.0
             },
             {
+              "order_id": "O023094",
+              "qty": 5,
+              "amount": 3250.0
+            },
+            {
               "order_id": "O023435",
               "qty": 6,
               "amount": 3900.0
             },
             {
+              "order_id": "O023393",
+              "qty": 15,
+              "amount": 7800.0
+            },
+            {
               "order_id": "O020837",
               "qty": 10,
               "amount": 6500.0
+            },
+            {
+              "order_id": "O023389",
+              "qty": 15,
+              "amount": 7800.0
             },
             {
               "order_id": "O023434",
@@ -1126,6 +1069,103 @@
               "order_id": "AE00264",
               "qty": 35,
               "amount": 10500.0
+            }
+          ]
+        },
+        "1500.0": {
+          "Unknown": [
+            {
+              "order_id": "O022786",
+              "qty": 10,
+              "amount": 7500.0
+            },
+            {
+              "order_id": "O021527",
+              "qty": 15,
+              "amount": 7875.0
+            },
+            {
+              "order_id": "O021527",
+              "qty": 6,
+              "amount": 2820.0
+            },
+            {
+              "order_id": "O021527",
+              "qty": 8,
+              "amount": 3920.0
+            },
+            {
+              "order_id": "O023598",
+              "qty": 20,
+              "amount": 15000.0
+            },
+            {
+              "order_id": "O022383",
+              "qty": 4,
+              "amount": 1480.0
+            },
+            {
+              "order_id": "O022383",
+              "qty": 4,
+              "amount": 1640.0
+            },
+            {
+              "order_id": "O023536",
+              "qty": 6,
+              "amount": 0.0
+            }
+          ],
+          "SS": [
+            {
+              "order_id": "O023295",
+              "qty": 1,
+              "amount": 490.0
+            }
+          ]
+        },
+        "1000.0": {
+          "Unknown": [
+            {
+              "order_id": "O022768",
+              "qty": 20,
+              "amount": 9000.0
+            },
+            {
+              "order_id": "O022299",
+              "qty": 6,
+              "amount": 2700.0
+            },
+            {
+              "order_id": "O022383",
+              "qty": 4,
+              "amount": 1400.0
+            },
+            {
+              "order_id": "O022383",
+              "qty": 4,
+              "amount": 1600.0
+            },
+            {
+              "order_id": "O023169",
+              "qty": 20,
+              "amount": 9000.0
+            },
+            {
+              "order_id": "O023484",
+              "qty": 20,
+              "amount": 10900.0
+            }
+          ],
+          "SS": [
+            {
+              "order_id": "O022660",
+              "qty": 2,
+              "amount": 1900.0
+            },
+            {
+              "order_id": "O022466",
+              "qty": 6,
+              "amount": 4500.0
             }
           ]
         },
@@ -1517,58 +1557,6 @@
           ]
         }
       },
-      "CMO": {
-        "2000.0": {
-          "Unknown": [
-            {
-              "order_id": "O022626",
-              "qty": 100,
-              "amount": 34000.0
-            },
-            {
-              "order_id": "O022367",
-              "qty": 50,
-              "amount": 14500.0
-            }
-          ],
-          "SS": [
-            {
-              "order_id": "O021444",
-              "qty": 10,
-              "amount": 8000.0
-            },
-            {
-              "order_id": "O023094",
-              "qty": 5,
-              "amount": 3250.0
-            },
-            {
-              "order_id": "O023393",
-              "qty": 15,
-              "amount": 7800.0
-            },
-            {
-              "order_id": "O023389",
-              "qty": 15,
-              "amount": 7800.0
-            }
-          ]
-        },
-        "1500.0": {
-          "Unknown": [
-            {
-              "order_id": "O021527",
-              "qty": 6,
-              "amount": 2820.0
-            },
-            {
-              "order_id": "O023536",
-              "qty": 6,
-              "amount": 0.0
-            }
-          ]
-        }
-      },
       "J type / Commercial": {
         "2000.0": {
           "Unknown": [
@@ -1620,11 +1608,6 @@
           ],
           "SS": [
             {
-              "order_id": "O021488",
-              "qty": 3,
-              "amount": 2340.0
-            },
-            {
               "order_id": "AE00210",
               "qty": 100,
               "amount": 0.0
@@ -1640,21 +1623,6 @@
               "amount": 3750.0
             },
             {
-              "order_id": "O021149",
-              "qty": 3,
-              "amount": 2040.0
-            },
-            {
-              "order_id": "O020893",
-              "qty": 10,
-              "amount": 6500.0
-            },
-            {
-              "order_id": "O020979",
-              "qty": 1,
-              "amount": 850.0
-            },
-            {
               "order_id": "O023198",
               "qty": 30,
               "amount": 11850.0
@@ -1663,16 +1631,6 @@
               "order_id": "AE00384",
               "qty": 50,
               "amount": 13500.0
-            },
-            {
-              "order_id": "O020660",
-              "qty": 1,
-              "amount": 650.0
-            },
-            {
-              "order_id": "O020660",
-              "qty": 1,
-              "amount": 650.0
             },
             {
               "order_id": "O022871",
@@ -1684,23 +1642,6 @@
               "qty": 50,
               "amount": 19750.0
             }
-          ],
-          "Copper": [
-            {
-              "order_id": "O023453",
-              "qty": 5,
-              "amount": 3050.0
-            },
-            {
-              "order_id": "O021171",
-              "qty": 5,
-              "amount": 2750.0
-            },
-            {
-              "order_id": "O023056",
-              "qty": 50,
-              "amount": 0.0
-            }
           ]
         },
         "3000.0": {
@@ -1709,18 +1650,6 @@
               "order_id": "O022804",
               "qty": 18,
               "amount": 29700.0
-            }
-          ],
-          "Copper": [
-            {
-              "order_id": "O022366",
-              "qty": 50,
-              "amount": 0.0
-            },
-            {
-              "order_id": "O021074",
-              "qty": 30,
-              "amount": 0.0
             }
           ]
         },
@@ -1735,11 +1664,6 @@
               "order_id": "AE00268",
               "qty": 100,
               "amount": 29000.0
-            },
-            {
-              "order_id": "O021488",
-              "qty": 3,
-              "amount": 2190.0
             },
             {
               "order_id": "O022933",
@@ -1763,48 +1687,14 @@
               "qty": 50,
               "amount": 17000.0
             }
-          ],
-          "Copper": [
-            {
-              "order_id": "O023056",
-              "qty": 50,
-              "amount": 0.0
-            }
           ]
         },
         "1000.0": {
           "SS": [
             {
-              "order_id": "O021488",
-              "qty": 7,
-              "amount": 4970.0
-            },
-            {
-              "order_id": "O021149",
-              "qty": 3,
-              "amount": 1950.0
-            },
-            {
               "order_id": "O023103",
               "qty": 30,
               "amount": 16500.0
-            }
-          ],
-          "Copper": [
-            {
-              "order_id": "O022366",
-              "qty": 40,
-              "amount": 0.0
-            },
-            {
-              "order_id": "O021074",
-              "qty": 20,
-              "amount": 0.0
-            },
-            {
-              "order_id": "O023542",
-              "qty": 40,
-              "amount": 0.0
             }
           ]
         }
@@ -2244,6 +2134,20 @@
               "qty": 2,
               "amount": 1080.0
             }
+          ],
+          "SS": [
+            {
+              "order_id": "O021488",
+              "qty": 3,
+              "amount": 2190.0
+            }
+          ],
+          "Copper": [
+            {
+              "order_id": "O023056",
+              "qty": 50,
+              "amount": 0.0
+            }
           ]
         },
         "2000.0": {
@@ -2257,9 +2161,29 @@
               "order_id": "O021573",
               "qty": 1,
               "amount": 465.0
+            },
+            {
+              "order_id": "O023453",
+              "qty": 5,
+              "amount": 3050.0
+            },
+            {
+              "order_id": "O021171",
+              "qty": 5,
+              "amount": 2750.0
+            },
+            {
+              "order_id": "O023056",
+              "qty": 50,
+              "amount": 0.0
             }
           ],
           "SS": [
+            {
+              "order_id": "O021488",
+              "qty": 3,
+              "amount": 2340.0
+            },
             {
               "order_id": "O022368",
               "qty": 10,
@@ -2274,10 +2198,95 @@
               "order_id": "O021847",
               "qty": 26,
               "amount": 12740.0
+            },
+            {
+              "order_id": "O021149",
+              "qty": 3,
+              "amount": 2040.0
+            },
+            {
+              "order_id": "O020893",
+              "qty": 10,
+              "amount": 6500.0
+            },
+            {
+              "order_id": "O020979",
+              "qty": 1,
+              "amount": 850.0
+            },
+            {
+              "order_id": "O020660",
+              "qty": 1,
+              "amount": 650.0
+            },
+            {
+              "order_id": "O020660",
+              "qty": 1,
+              "amount": 650.0
+            }
+          ]
+        },
+        "1000.0": {
+          "SS": [
+            {
+              "order_id": "O021488",
+              "qty": 7,
+              "amount": 4970.0
+            },
+            {
+              "order_id": "O021028",
+              "qty": 1,
+              "amount": 500.0
+            },
+            {
+              "order_id": "O021149",
+              "qty": 3,
+              "amount": 1950.0
+            },
+            {
+              "order_id": "O023102",
+              "qty": 10,
+              "amount": 16100.0
+            }
+          ],
+          "Copper": [
+            {
+              "order_id": "O022366",
+              "qty": 40,
+              "amount": 0.0
+            },
+            {
+              "order_id": "O021074",
+              "qty": 20,
+              "amount": 0.0
+            },
+            {
+              "order_id": "O023542",
+              "qty": 40,
+              "amount": 0.0
+            }
+          ],
+          "Brass": [
+            {
+              "order_id": "O021029",
+              "qty": 49,
+              "amount": 24500.0
             }
           ]
         },
         "3000.0": {
+          "Copper": [
+            {
+              "order_id": "O022366",
+              "qty": 50,
+              "amount": 0.0
+            },
+            {
+              "order_id": "O021074",
+              "qty": 30,
+              "amount": 0.0
+            }
+          ],
           "SS": [
             {
               "order_id": "O022368",
@@ -2305,27 +2314,6 @@
               "order_id": "O021268",
               "qty": 20,
               "amount": 21400.0
-            }
-          ]
-        },
-        "1000.0": {
-          "Brass": [
-            {
-              "order_id": "O021029",
-              "qty": 49,
-              "amount": 24500.0
-            }
-          ],
-          "SS": [
-            {
-              "order_id": "O021028",
-              "qty": 1,
-              "amount": 500.0
-            },
-            {
-              "order_id": "O023102",
-              "qty": 10,
-              "amount": 16100.0
             }
           ]
         }
@@ -3344,7 +3332,11 @@
               "qty": 6,
               "amount": 11700.0
             }
-          ],
+          ]
+        }
+      },
+      "Single pipe": {
+        "3000.0": {
           "SS": [
             {
               "order_id": "O023056",
@@ -3353,7 +3345,7 @@
             }
           ]
         },
-        "3000.0": {
+        "2000.0": {
           "SS": [
             {
               "order_id": "O023056",
@@ -3403,6 +3395,11 @@
               "order_id": "AE00021",
               "qty": 50,
               "amount": 24000.0
+            },
+            {
+              "order_id": "AE00243",
+              "qty": 1,
+              "amount": 1.0
             },
             {
               "order_id": "AE00108",
@@ -3651,6 +3648,11 @@
           ],
           "SS": [
             {
+              "order_id": "AE00324",
+              "qty": 10,
+              "amount": 10500.0
+            },
+            {
               "order_id": "O022246",
               "qty": 5,
               "amount": 7250.0
@@ -3763,6 +3765,11 @@
               "order_id": "AE00301",
               "qty": 2,
               "amount": 1300.0
+            },
+            {
+              "order_id": "AE00299",
+              "qty": 15,
+              "amount": 10500.0
             }
           ]
         },
@@ -3832,6 +3839,11 @@
             },
             {
               "order_id": "AE00324",
+              "qty": 10,
+              "amount": 9500.0
+            },
+            {
+              "order_id": "AE00324",
               "qty": 6,
               "amount": 3600.0
             },
@@ -3871,6 +3883,11 @@
               "amount": 40500.0
             },
             {
+              "order_id": "AE00418",
+              "qty": 3,
+              "amount": 3450.0
+            },
+            {
               "order_id": "O020804",
               "qty": 3,
               "amount": 4950.0
@@ -3879,6 +3896,11 @@
               "order_id": "O023361",
               "qty": 10,
               "amount": 14000.0
+            },
+            {
+              "order_id": "O020658",
+              "qty": 3,
+              "amount": 5550.0
             },
             {
               "order_id": "O023528",
@@ -4052,6 +4074,16 @@
             },
             {
               "order_id": "AE00210",
+              "qty": 50,
+              "amount": 0.0
+            },
+            {
+              "order_id": "AE00210",
+              "qty": 50,
+              "amount": 0.0
+            },
+            {
+              "order_id": "AE00210",
               "qty": 100,
               "amount": 0.0
             },
@@ -4089,6 +4121,11 @@
               "order_id": "O021625",
               "qty": 3,
               "amount": 4650.0
+            },
+            {
+              "order_id": "O021670",
+              "qty": 6,
+              "amount": 11100.0
             }
           ],
           "Unknown": [
@@ -4101,6 +4138,11 @@
               "order_id": "AE00350",
               "qty": 100,
               "amount": 56000.0
+            },
+            {
+              "order_id": "AE00423",
+              "qty": 25,
+              "amount": 25.0
             },
             {
               "order_id": "O021813",
@@ -4190,6 +4232,11 @@
               "order_id": "AE00314",
               "qty": 6,
               "amount": 18000.0
+            },
+            {
+              "order_id": "AE00299",
+              "qty": 15,
+              "amount": 9750.0
             }
           ]
         },
@@ -4262,6 +4309,13 @@
               "order_id": "O020727",
               "qty": 10,
               "amount": 17000.0
+            }
+          ],
+          "Unknown": [
+            {
+              "order_id": "AE00243",
+              "qty": 4,
+              "amount": 4.0
             }
           ],
           "Brass": [
@@ -4580,6 +4634,11 @@
               "amount": 11400.0
             },
             {
+              "order_id": "AE00021",
+              "qty": 25,
+              "amount": 15250.0
+            },
+            {
               "order_id": "O023191",
               "qty": 2,
               "amount": 2600.0
@@ -4809,6 +4868,11 @@
               "amount": 0.0
             },
             {
+              "order_id": "O021397",
+              "qty": 3,
+              "amount": 8100.0
+            },
+            {
               "order_id": "O022225",
               "qty": 6,
               "amount": 9750.0
@@ -4874,6 +4938,13 @@
               "order_id": "O022436",
               "qty": 5,
               "amount": 7250.0
+            }
+          ],
+          "MS": [
+            {
+              "order_id": "O021254",
+              "qty": 5,
+              "amount": 22500.0
             }
           ]
         },
@@ -5065,6 +5136,25 @@
             }
           ]
         },
+        "1000.0": {
+          "Unknown": [
+            {
+              "order_id": "O020838",
+              "qty": 6,
+              "amount": 4860.0
+            },
+            {
+              "order_id": "O020643",
+              "qty": 14,
+              "amount": 11340.0
+            },
+            {
+              "order_id": "O020643",
+              "qty": 6,
+              "amount": 4860.0
+            }
+          ]
+        },
         "1200.0": {
           "Incoloy": [
             {
@@ -5123,118 +5213,6 @@
           ]
         }
       },
-      "CMO": {
-        "9000.0": {
-          "SS": [
-            {
-              "order_id": "AE00324",
-              "qty": 10,
-              "amount": 10500.0
-            }
-          ],
-          "MS": [
-            {
-              "order_id": "O021254",
-              "qty": 5,
-              "amount": 22500.0
-            }
-          ],
-          "Unknown": [
-            {
-              "order_id": "O021397",
-              "qty": 3,
-              "amount": 8100.0
-            }
-          ],
-          "Brass": [
-            {
-              "order_id": "AE00299",
-              "qty": 15,
-              "amount": 10500.0
-            }
-          ]
-        },
-        "6000.0": {
-          "SS": [
-            {
-              "order_id": "AE00324",
-              "qty": 10,
-              "amount": 9500.0
-            },
-            {
-              "order_id": "AE00418",
-              "qty": 3,
-              "amount": 3450.0
-            },
-            {
-              "order_id": "AE00210",
-              "qty": 50,
-              "amount": 0.0
-            },
-            {
-              "order_id": "AE00210",
-              "qty": 50,
-              "amount": 0.0
-            }
-          ],
-          "Unknown": [
-            {
-              "order_id": "AE00423",
-              "qty": 25,
-              "amount": 25.0
-            },
-            {
-              "order_id": "AE00021",
-              "qty": 25,
-              "amount": 15250.0
-            }
-          ],
-          "Brass": [
-            {
-              "order_id": "AE00299",
-              "qty": 15,
-              "amount": 9750.0
-            }
-          ]
-        },
-        "1000.0": {
-          "Unknown": [
-            {
-              "order_id": "O020838",
-              "qty": 6,
-              "amount": 4860.0
-            },
-            {
-              "order_id": "O020643",
-              "qty": 14,
-              "amount": 11340.0
-            },
-            {
-              "order_id": "O020643",
-              "qty": 6,
-              "amount": 4860.0
-            }
-          ]
-        },
-        "3000.0": {
-          "Unknown": [
-            {
-              "order_id": "AE00243",
-              "qty": 1,
-              "amount": 1.0
-            }
-          ]
-        },
-        "5000.0": {
-          "Unknown": [
-            {
-              "order_id": "AE00243",
-              "qty": 4,
-              "amount": 4.0
-            }
-          ]
-        }
-      },
       "Double pipe": {
         "3000.0": {
           "Incoloy": [
@@ -5279,22 +5257,6 @@
               "order_id": "AE00180",
               "qty": 30,
               "amount": 10500.0
-            }
-          ]
-        }
-      },
-      "J type / Commercial": {
-        "6000.0": {
-          "SS": [
-            {
-              "order_id": "O020658",
-              "qty": 3,
-              "amount": 5550.0
-            },
-            {
-              "order_id": "O021670",
-              "qty": 6,
-              "amount": 11100.0
             }
           ]
         }
@@ -5881,6 +5843,11 @@
               "order_id": "AE00124",
               "qty": 30,
               "amount": 9240.0
+            },
+            {
+              "order_id": "AE00135",
+              "qty": 12,
+              "amount": 10200.0
             }
           ]
         },
@@ -5921,20 +5888,14 @@
         "3000.0": {
           "MS": [
             {
-              "order_id": "AE00132",
-              "qty": 8,
-              "amount": 6800.0
-            }
-          ]
-        }
-      },
-      "CMO": {
-        "3000.0": {
-          "MS": [
-            {
               "order_id": "AE00251",
               "qty": 4,
               "amount": 7600.0
+            },
+            {
+              "order_id": "AE00132",
+              "qty": 8,
+              "amount": 6800.0
             }
           ]
         },
@@ -5944,15 +5905,6 @@
               "order_id": "AE00388",
               "qty": 6,
               "amount": 4500.0
-            }
-          ]
-        },
-        "2000.0": {
-          "SS": [
-            {
-              "order_id": "AE00135",
-              "qty": 12,
-              "amount": 10200.0
             }
           ]
         }
