@@ -4,7 +4,6 @@ import json
 
 st.set_page_config(page_title="SOCKET REPORT ITEM WISE", layout="wide")
 st.title("🔧 SOCKET REPORT ITEM WISE")
-st.markdown("*MD‑level report – select a product type / wattage to view details*")
 
 @st.cache_data
 def load_data():
