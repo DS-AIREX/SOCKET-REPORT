@@ -3,10 +3,11 @@ import pandas as pd
 import json
 
 st.set_page_config(page_title="SOCKET REPORT ITEM WISE", layout="wide")
-st.title("🔧 SOCKET REPORT ITEM WISE")
 
-# Sidebar instruction (for mobile users)
-st.sidebar.info("📱 **Tap the '☰' icon at top‑left** to open the size selector (on mobile).")
+# Instruction for mobile users – shown at the very top
+st.info("📱 **Tap the '☰' icon at top‑left to open the size selector (on mobile).**")
+
+st.title("🔧 SOCKET REPORT ITEM WISE")
 
 @st.cache_data
 def load_data():
