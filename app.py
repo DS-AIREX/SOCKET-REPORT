@@ -5,6 +5,9 @@ import json
 st.set_page_config(page_title="SOCKET REPORT ITEM WISE", layout="wide")
 st.title("🔧 SOCKET REPORT ITEM WISE")
 
+# Sidebar instruction (for mobile users)
+st.sidebar.info("📱 **Tap the '☰' icon at top‑left** to open the size selector (on mobile).")
+
 @st.cache_data
 def load_data():
     with open('dashboard_data.json', 'r') as f:
@@ -40,35 +43,26 @@ def show_orders(orders, title):
     st.write(f"**{title} – Subtotal:** QTY = {qty}, AMOUNT = ₹{amt:,.2f}")
     st.dataframe(df, use_container_width=True, hide_index=True)
 
-# ----- Exclusive expansion using radio buttons -----
 if has_product_type:
-    # List product types
-    product_types = sorted(structure.keys())
-    selected_type = st.radio("Select Product Type", product_types, horizontal=False)
-
-    # Show details for the selected product type only
-    prod_dict = structure[selected_type]
-    pt_qty = sum(order['qty'] for w in prod_dict.values() for m in w.values() for order in m)
-    pt_amt = sum(order['amount'] for w in prod_dict.values() for m in w.values() for order in m)
-    st.write(f"**Product type subtotal:** QTY = {pt_qty}, AMOUNT = ₹{pt_amt:,.2f}")
-
-    for wattage, mat_dict in sorted(prod_dict.items(), key=lambda x: float(x[0])):
-        with st.expander(f"⚡ Wattage: {wattage} W"):
+    for prod_type, watt_dict in structure.items():
+        with st.expander(f"🔹 PRODUCT TYPE: {prod_type}"):
+            pt_qty = sum(order['qty'] for w in watt_dict.values() for m in w.values() for order in m)
+            pt_amt = sum(order['amount'] for w in watt_dict.values() for m in w.values() for order in m)
+            st.write(f"**Product type subtotal:** QTY = {pt_qty}, AMOUNT = ₹{pt_amt:,.2f}")
+            for wattage, mat_dict in sorted(watt_dict.items(), key=lambda x: float(x[0])):
+                with st.expander(f"⚡ Wattage: {wattage} W"):
+                    w_qty = sum(order['qty'] for m in mat_dict.values() for order in m)
+                    w_amt = sum(order['amount'] for m in mat_dict.values() for order in m)
+                    st.write(f"**Wattage subtotal:** QTY = {w_qty}, AMOUNT = ₹{w_amt:,.2f}")
+                    for material, orders in mat_dict.items():
+                        with st.expander(f"🧪 Material: {material}"):
+                            show_orders(orders, f"Material: {material}")
+else:
+    for wattage, mat_dict in sorted(structure.items(), key=lambda x: float(x[0])):
+        with st.expander(f"⚡ WATTAGE: {wattage} W"):
             w_qty = sum(order['qty'] for m in mat_dict.values() for order in m)
             w_amt = sum(order['amount'] for m in mat_dict.values() for order in m)
             st.write(f"**Wattage subtotal:** QTY = {w_qty}, AMOUNT = ₹{w_amt:,.2f}")
             for material, orders in mat_dict.items():
                 with st.expander(f"🧪 Material: {material}"):
                     show_orders(orders, f"Material: {material}")
-else:
-    # For sizes without product types, use wattage as radio buttons
-    wattages = sorted(structure.keys(), key=float)
-    selected_wattage = st.radio("Select Wattage", wattages, format_func=lambda x: f"{x} W", horizontal=False)
-
-    mat_dict = structure[selected_wattage]
-    w_qty = sum(order['qty'] for m in mat_dict.values() for order in m)
-    w_amt = sum(order['amount'] for m in mat_dict.values() for order in m)
-    st.write(f"**Wattage subtotal:** QTY = {w_qty}, AMOUNT = ₹{w_amt:,.2f}")
-    for material, orders in mat_dict.items():
-        with st.expander(f"🧪 Material: {material}"):
-            show_orders(orders, f"Material: {material}")
