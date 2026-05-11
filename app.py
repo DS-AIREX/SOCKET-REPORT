@@ -5,7 +5,7 @@ import json
 st.set_page_config(page_title="SOCKET REPORT ITEM WISE", layout="wide")
 
 # Instruction for mobile users – shown at the very top
-st.info("📱 **Tap the '>>' icon at top‑left to select socket size.**")
+st.info("📱 **Tap the '☰' icon at top‑left to open the size selector (on mobile).**")
 
 st.title("🔧 SOCKET REPORT ITEM WISE")
 
@@ -22,39 +22,36 @@ selected_size = st.sidebar.selectbox("📏 Select Size (inch)", sizes, format_fu
 size_info = data[selected_size]
 structure = size_info['structure']
 total_qty = size_info['total_qty']
-total_amount = size_info['total_amount']
 unique_orders = size_info['unique_orders']
 has_product_type = size_info['has_product_type']
 
 avg_qty_per_order = total_qty / unique_orders if unique_orders > 0 else 0
 
-col1, col2, col3, col4 = st.columns(4)
+# Show only QTY metrics (no amount)
+col1, col2, col3 = st.columns(3)
 col1.metric("📦 Total QTY", f"{total_qty:,.0f}")
-col2.metric("💰 Total AMOUNT", f"₹{total_amount:,.2f}")
-col3.metric("🧾 Number of Orders", f"{unique_orders}")
-col4.metric("📊 Avg QTY / Order", f"{avg_qty_per_order:.1f}")
+col2.metric("🧾 Number of Orders", f"{unique_orders}")
+col3.metric("📊 Avg QTY / Order", f"{avg_qty_per_order:.1f}")
 
 st.markdown("---")
 st.subheader(f"📂 Detailed Breakdown for {selected_size} inch")
 
 def show_orders(orders, title):
-    df = pd.DataFrame(orders)
+    # Create dataframe with only order_id and qty
+    df = pd.DataFrame([{'order_id': o['order_id'], 'qty': o['qty']} for o in orders])
     qty = df['qty'].sum()
-    amt = df['amount'].sum()
-    st.write(f"**{title} – Subtotal:** QTY = {qty}, AMOUNT = ₹{amt:,.2f}")
+    st.write(f"**{title} – Subtotal QTY:** {qty}")
     st.dataframe(df, use_container_width=True, hide_index=True)
 
 if has_product_type:
     for prod_type, watt_dict in structure.items():
         with st.expander(f"🔹 PRODUCT TYPE: {prod_type}"):
             pt_qty = sum(order['qty'] for w in watt_dict.values() for m in w.values() for order in m)
-            pt_amt = sum(order['amount'] for w in watt_dict.values() for m in w.values() for order in m)
-            st.write(f"**Product type subtotal:** QTY = {pt_qty}, AMOUNT = ₹{pt_amt:,.2f}")
+            st.write(f"**Product type subtotal QTY:** {pt_qty}")
             for wattage, mat_dict in sorted(watt_dict.items(), key=lambda x: float(x[0])):
                 with st.expander(f"⚡ Wattage: {wattage} W"):
                     w_qty = sum(order['qty'] for m in mat_dict.values() for order in m)
-                    w_amt = sum(order['amount'] for m in mat_dict.values() for order in m)
-                    st.write(f"**Wattage subtotal:** QTY = {w_qty}, AMOUNT = ₹{w_amt:,.2f}")
+                    st.write(f"**Wattage subtotal QTY:** {w_qty}")
                     for material, orders in mat_dict.items():
                         with st.expander(f"🧪 Material: {material}"):
                             show_orders(orders, f"Material: {material}")
@@ -62,8 +59,7 @@ else:
     for wattage, mat_dict in sorted(structure.items(), key=lambda x: float(x[0])):
         with st.expander(f"⚡ WATTAGE: {wattage} W"):
             w_qty = sum(order['qty'] for m in mat_dict.values() for order in m)
-            w_amt = sum(order['amount'] for m in mat_dict.values() for order in m)
-            st.write(f"**Wattage subtotal:** QTY = {w_qty}, AMOUNT = ₹{w_amt:,.2f}")
+            st.write(f"**Wattage subtotal QTY:** {w_qty}")
             for material, orders in mat_dict.items():
                 with st.expander(f"🧪 Material: {material}"):
                     show_orders(orders, f"Material: {material}")
