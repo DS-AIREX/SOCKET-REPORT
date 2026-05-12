@@ -27,7 +27,7 @@ has_product_type = size_info['has_product_type']
 
 avg_qty_per_order = total_qty / unique_orders if unique_orders > 0 else 0
 
-# Show only QTY metrics (no amount)
+# Metrics (quantity only)
 col1, col2, col3 = st.columns(3)
 col1.metric("📦 Total QTY", f"{total_qty:,.0f}")
 col2.metric("🧾 Number of Orders", f"{unique_orders}")
@@ -37,11 +37,11 @@ st.markdown("---")
 st.subheader(f"📂 Detailed Breakdown for {selected_size} inch")
 
 def show_orders(orders, title):
-    # Create dataframe with only order_id and qty
-    df = pd.DataFrame([{'order_id': o['order_id'], 'qty': o['qty']} for o in orders])
-    qty = df['qty'].sum()
+    """Display orders as a static table without interactive widgets."""
+    df = pd.DataFrame([{'Order ID': o['order_id'], 'QTY': o['qty']} for o in orders])
+    qty = df['QTY'].sum()
     st.write(f"**{title} – Subtotal QTY:** {qty}")
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.table(df)  # plain table, no fullscreen or column controls
 
 if has_product_type:
     for prod_type, watt_dict in structure.items():
