@@ -4,9 +4,7 @@ import json
 
 st.set_page_config(page_title="SOCKET REPORT ITEM WISE", layout="wide")
 
-# Instruction for mobile users – shown at the very top
 st.info("📱 **Tap the '☰' icon at top‑left to open the size selector (on mobile).**")
-
 st.title("🔧 SOCKET REPORT ITEM WISE")
 
 @st.cache_data
@@ -27,7 +25,6 @@ has_product_type = size_info['has_product_type']
 
 avg_qty_per_order = total_qty / unique_orders if unique_orders > 0 else 0
 
-# Metrics (quantity only)
 col1, col2, col3 = st.columns(3)
 col1.metric("📦 Total QTY", f"{total_qty:,.0f}")
 col2.metric("🧾 Number of Orders", f"{unique_orders}")
@@ -37,11 +34,11 @@ st.markdown("---")
 st.subheader(f"📂 Detailed Breakdown for {selected_size} inch")
 
 def show_orders(orders, title):
-    """Display orders as a static table without interactive widgets."""
-    df = pd.DataFrame([{'Order ID': o['order_id'], 'QTY': o['qty']} for o in orders])
-    qty = df['QTY'].sum()
-    st.write(f"**{title} – Subtotal QTY:** {qty}")
-    st.table(df)  # plain table, no fullscreen or column controls
+    """Show only quantities (no Order ID)."""
+    df = pd.DataFrame({'QTY': [o['qty'] for o in orders]})
+    total = df['QTY'].sum()
+    st.write(f"**{title} – Subtotal QTY:** {total}")
+    st.table(df)
 
 if has_product_type:
     for prod_type, watt_dict in structure.items():
